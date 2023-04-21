@@ -1,6 +1,8 @@
-"""Thread/unittest modules"""
+"""Thread/unittest/logging modules"""
 from threading import Lock, currentThread
+from logging.handlers import RotatingFileHandler
 import unittest
+import logging
 
 class Marketplace:
     """
@@ -14,14 +16,22 @@ class Marketplace:
         self.producers = {} # key = producer_id, value = product list for the producer_id
         self.carts = {} # key: cart_id, value: list of products of the cart
         self.lock = Lock()
+        self.logger = logging.getLogger(__name__)
+        self.logger.setLevel(logging.INFO)
+        handler = RotatingFileHandler('marketplace.log', maxBytes=10000, backupCount=3)
+        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+        handler.setFormatter(formatter)
+        self.logger.addHandler(handler)
 
     def register_producer(self):
+        self.logger.info('Registered new producer')
         with self.lock:
             self.producer_id_count += 1
             self.producers[self.producer_id_count] = [] # initialize
             return self.producer_id_count
 
     def publish(self, producer_id, product):
+        self.logger.info('Producer %s placed on the market %s', producer_id, product)
         prod_id = int(producer_id)
         if len(self.producers[prod_id]) == self.queue_size_per_producer:
             return False
@@ -29,12 +39,14 @@ class Marketplace:
         return True
 
     def new_cart(self):
+        self.logger.info('Registered new cart')
         with self.lock:
             self.carts_id_count += 1
             self.carts[self.carts_id_count] = [] # initialize
             return self.carts_id_count
 
     def add_to_cart(self, cart_id, product):
+        self.logger.info('Added product %s to the cart %s', product, cart_id)
         carts_id = int(cart_id)
 
         with self.lock:
@@ -46,6 +58,7 @@ class Marketplace:
             return False
 
     def remove_from_cart(self, cart_id, product):
+        self.logger.info('Removed product %s from the cart %s', product, cart_id)
         with self.lock:
             for pair in self.carts[int(cart_id)]:
                 if pair[0] == product:
@@ -54,6 +67,7 @@ class Marketplace:
                     return
 
     def place_order(self, cart_id):
+        self.logger.info('Placed order from the cart %s', cart_id)
         order = []
         for pair in self.carts[int(cart_id)]:
             with self.lock:

@@ -1,0 +1,35 @@
+2023-04-21 10:14:01,399 - tema.marketplace - INFO - Producer 8 placed on the market Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+2023-04-21 10:14:01,401 - tema.marketplace - INFO - Producer 27 placed on the market Tea(name='Vietnam Oolong', price=10, type='Oolong')
+2023-04-21 10:14:01,407 - tema.marketplace - INFO - Producer 26 placed on the market Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM')
+2023-04-21 10:14:01,409 - tema.marketplace - INFO - Producer 2 placed on the market Tea(name='Pai Mu Tan', price=9, type='White')
+2023-04-21 10:14:01,412 - tema.marketplace - INFO - Producer 1 placed on the market Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+2023-04-21 10:14:01,413 - tema.marketplace - INFO - Added product Tea(name='Jasmine', price=6, type='Green') to the cart 503
+2023-04-21 10:14:01,415 - tema.marketplace - INFO - Added product Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM') to the cart 503
+2023-04-21 10:14:01,415 - tema.marketplace - INFO - Added product Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM') to the cart 503
+2023-04-21 10:14:01,415 - tema.marketplace - INFO - Removed product Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM') from the cart 503
+2023-04-21 10:14:01,416 - tema.marketplace - INFO - Removed product Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM') from the cart 503
+2023-04-21 10:14:01,416 - tema.marketplace - INFO - Placed order from the cart 503
+2023-04-21 10:14:01,416 - tema.marketplace - INFO - Producer 19 placed on the market Coffee(name='Brasil', price=7, acidity=5.09, roast_level='MEDIUM')
+2023-04-21 10:14:01,417 - tema.marketplace - INFO - Registered new cart
+2023-04-21 10:14:01,417 - tema.marketplace - INFO - Added product Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM') to the cart 577
+2023-04-21 10:14:01,417 - tema.marketplace - INFO - Placed order from the cart 577
+2023-04-21 10:14:01,418 - tema.marketplace - INFO - Producer 35 placed on the market Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM')
+2023-04-21 10:14:01,421 - tema.marketplace - INFO - Producer 11 placed on the market Coffee(name='Brasil', price=7, acidity=5.09, roast_level='MEDIUM')
+2023-04-21 10:14:01,443 - tema.marketplace - INFO - Producer 43 placed on the market Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+2023-04-21 10:14:01,445 - tema.marketplace - INFO - Producer 25 placed on the market Tea(name='White Peach', price=5, type='White')
+2023-04-21 10:14:01,446 - tema.marketplace - INFO - Producer 23 placed on the market Coffee(name='Brasil', price=7, acidity=5.09, roast_level='MEDIUM')
+2023-04-21 10:14:01,447 - tema.marketplace - INFO - Producer 47 placed on the market Tea(name='English Breakfast', price=2, type='Black')
+2023-04-21 10:14:01,449 - tema.marketplace - INFO - Producer 45 placed on the market Tea(name='Pai Mu Tan', price=9, type='White')
+2023-04-21 10:14:01,449 - tema.marketplace - INFO - Producer 16 placed on the market Tea(name='Pai Mu Tan', price=9, type='White')
+2023-04-21 10:14:01,449 - tema.marketplace - INFO - Producer 44 placed on the market Coffee(name='Brasil', price=7, acidity=5.09, roast_level='MEDIUM')
+2023-04-21 10:14:01,453 - tema.marketplace - INFO - Producer 13 placed on the market Tea(name='Jasmine', price=6, type='Green')
+2023-04-21 10:14:01,453 - tema.marketplace - INFO - Producer 31 placed on the market Tea(name='White Peach', price=5, type='White')
+2023-04-21 10:14:01,459 - tema.marketplace - INFO - Producer 6 placed on the market Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+2023-04-21 10:14:01,461 - tema.marketplace - INFO - Producer 33 placed on the market Tea(name='Pai Mu Tan', price=9, type='White')
+2023-04-21 10:14:01,468 - tema.marketplace - INFO - Added product Tea(name='Jasmine', price=6, type='Green') to the cart 567
+2023-04-21 10:14:01,468 - tema.marketplace - INFO - Added product Tea(name='Jasmine', price=6, type='Green') to the cart 567
+2023-04-21 10:14:01,469 - tema.marketplace - INFO - Added product Coffee(name='Brasil', price=7, acidity=5.09, roast_level='MEDIUM') to the cart 567
+2023-04-21 10:14:01,469 - tema.marketplace - INFO - Producer 24 placed on the market Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM')
+2023-04-21 10:14:01,469 - tema.marketplace - INFO - Added product Coffee(name='Brasil', price=7, acidity=5.09, roast_level='MEDIUM') to the cart 567
+2023-04-21 10:14:01,471 - tema.marketplace - INFO - Removed product Coffee(name='Brasil', price=7, acidity=5.09, roast_level='MEDIUM') from the cart 567
+2023-04-21 10:14:01,473 - tema.marketplace - INFO - Placed order from the cart 567
