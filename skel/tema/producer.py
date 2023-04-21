@@ -15,11 +15,11 @@ class Producer(Thread):
 
     def run(self):
         while True:
-            for (product, num_product, wait_time_product) in self.products:
-                for i in range(0, num_product):
-                    if self.marketplace.publish(str(self.this_producer_id), product):
+            for tuple in self.products: # tuple = (product, nr_product, wait_time)
+                for i in range(0, tuple[1]):
+                    if self.marketplace.publish(str(self.this_producer_id), tuple[0]):
                         # marketplace is available
-                        time.sleep(wait_time_product)
+                        time.sleep(tuple[2])
                     else:
                         # marketplace is not available, stay on the same loop iteration
                         time.sleep(self.republish_wait_time)

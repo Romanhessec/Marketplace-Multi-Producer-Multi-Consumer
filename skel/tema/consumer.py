@@ -16,13 +16,17 @@ class Consumer(Thread):
         for cart in self.carts:
             cart_id = self.marketplace.new_cart()
 
-            for request in cart:
-                if request["type"] == "add":
-                    for _ in range(request["quantity"]):
-                        while not self.marketplace.add_to_cart(cart_id, request["product"]):
+            for tuple in cart:
+                if tuple["type"] == "add":
+                    for i in range(tuple["quantity"]):
+                        while True:
+                            added_or_not = self.marketplace.add_to_cart(str(cart_id), tuple["product"])
+                            if added_or_not:
+                                break
                             time.sleep(self.retry_wait_time)
-                elif request["type"] == "remove":
-                    for _ in range(request["quantity"]):
-                        self.marketplace.remove_from_cart(cart_id, request["product"])
 
-            self.marketplace.place_order(cart_id)
+                elif tuple["type"] == "remove":
+                    for i in range(tuple["quantity"]):
+                        self.marketplace.remove_from_cart(str(cart_id), tuple["product"])
+
+            self.marketplace.place_order(str(cart_id))
