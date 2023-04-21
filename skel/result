@@ -32,16 +32,16 @@ Test 10:		PASSED
 Run pylint
 
 ************* Module consumer
-tema/consumer.py:23:0: C0301: Line too long (103/100) (line-too-long)
+tema/consumer.py:24:0: C0301: Line too long (103/100) (line-too-long)
 tema/consumer.py:19:16: W0622: Redefining built-in 'tuple' (redefined-builtin)
 tema/consumer.py:21:24: W0612: Unused variable 'i' (unused-variable)
 ************* Module marketplace
-tema/marketplace.py:45:0: C0301: Line too long (113/100) (line-too-long)
-tema/marketplace.py:73:0: C0301: Line too long (108/100) (line-too-long)
-tema/marketplace.py:87:0: C0301: Line too long (103/100) (line-too-long)
+tema/marketplace.py:45:0: C0301: Line too long (114/100) (line-too-long)
+tema/marketplace.py:73:0: C0301: Line too long (109/100) (line-too-long)
+tema/marketplace.py:87:0: C0301: Line too long (104/100) (line-too-long)
 ************* Module producer
 tema/producer.py:18:16: W0622: Redefining built-in 'tuple' (redefined-builtin)
 
 ------------------------------------------------------------------
-Your code has been rated at 9.54/10 (previous run: 9.67/10, -0.12)
+Your code has been rated at 9.54/10 (previous run: 9.54/10, +0.00)
 

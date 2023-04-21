@@ -1,8 +1,74 @@
-2023-04-21 14:36:38,332 - tema.marketplace - INFO - Added product Tea(name='Pai Mu Tan', price=9, type='White') to the cart 577
-2023-04-21 14:36:38,332 - tema.marketplace - INFO - Producer 27 couldnt place Tea(name='Jasmine', price=6, type='Green') on the market - max queue size
-2023-04-21 14:36:38,332 - tema.marketplace - INFO - Producer 48 couldnt place Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM') on the market - max queue size
-2023-04-21 14:36:38,338 - tema.marketplace - INFO - Producer 8 couldnt place Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM') on the market - max queue size
-2023-04-21 14:36:38,342 - tema.marketplace - INFO - Producer 15 placed on the market Tea(name='Jasmine', price=6, type='Green')
-2023-04-21 14:36:38,354 - tema.marketplace - INFO - Added product Coffee(name='Brasil', price=7, acidity=5.09, roast_level='MEDIUM') to the cart 577
-2023-04-21 14:36:38,357 - tema.marketplace - INFO - Added product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM') to the cart 577
-2023-04-21 14:36:38,358 - tema.marketplace - INFO - Placed order from the cart 577
+2023-04-21 17:07:27,846:Logger Marketplace:ERROR:Producer 24 couldnt place Tea(name='Vietnam Oolong', price=10, type='Oolong') on the market - max queue size
+2023-04-21 17:07:27,856:Logger Marketplace:ERROR:Producer 22 couldnt place Tea(name='English Breakfast', price=2, type='Black') on the market - max queue size
+2023-04-21 17:07:27,857:Logger Marketplace:ERROR:Producer 32 couldnt place Tea(name='White Peach', price=5, type='White') on the market - max queue size
+2023-04-21 17:07:27,866:Logger Marketplace:ERROR:Producer 46 couldnt place Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM') on the market - max queue size
+2023-04-21 17:07:27,867:Logger Marketplace:INFO:Producer 4 placed on the market Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM')
+2023-04-21 17:07:27,867:Logger Marketplace:ERROR:Producer 37 couldnt place Tea(name='Pai Mu Tan', price=9, type='White') on the market - max queue size
+2023-04-21 17:07:27,867:Logger Marketplace:ERROR:Producer 38 couldnt place Tea(name='Jasmine', price=6, type='Green') on the market - max queue size
+2023-04-21 17:07:27,867:Logger Marketplace:ERROR:Producer 47 couldnt place Tea(name='Pai Mu Tan', price=9, type='White') on the market - max queue size
+2023-04-21 17:07:27,875:Logger Marketplace:ERROR:Producer 17 couldnt place Tea(name='English Breakfast', price=2, type='Black') on the market - max queue size
+2023-04-21 17:07:27,875:Logger Marketplace:ERROR:Producer 33 couldnt place Tea(name='Pai Mu Tan', price=9, type='White') on the market - max queue size
+2023-04-21 17:07:27,876:Logger Marketplace:INFO:Producer 43 placed on the market Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+2023-04-21 17:07:27,877:Logger Marketplace:ERROR:Producer 44 couldnt place Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM') on the market - max queue size
+2023-04-21 17:07:27,886:Logger Marketplace:INFO:Producer 15 placed on the market Tea(name='Jasmine', price=6, type='Green')
+2023-04-21 17:07:27,887:Logger Marketplace:ERROR:Producer 11 couldnt place Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM') on the market - max queue size
+2023-04-21 17:07:27,887:Logger Marketplace:INFO:Producer 2 placed on the market Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+2023-04-21 17:07:27,906:Logger Marketplace:INFO:Producer 31 placed on the market Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM')
+2023-04-21 17:07:27,906:Logger Marketplace:ERROR:Producer 49 couldnt place Coffee(name='Brasil', price=7, acidity=5.09, roast_level='MEDIUM') on the market - max queue size
+2023-04-21 17:07:27,906:Logger Marketplace:ERROR:Producer 8 couldnt place Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM') on the market - max queue size
+2023-04-21 17:07:27,916:Logger Marketplace:INFO:Producer 14 placed on the market Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM')
+2023-04-21 17:07:27,916:Logger Marketplace:INFO:Producer 0 placed on the market Tea(name='Vietnam Oolong', price=10, type='Oolong')
+2023-04-21 17:07:27,917:Logger Marketplace:ERROR:Producer 20 couldnt place Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM') on the market - max queue size
+2023-04-21 17:07:27,917:Logger Marketplace:ERROR:Producer 6 couldnt place Coffee(name='Brasil', price=7, acidity=5.09, roast_level='MEDIUM') on the market - max queue size
+2023-04-21 17:07:27,925:Logger Marketplace:ERROR:Producer 36 couldnt place Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM') on the market - max queue size
+2023-04-21 17:07:27,926:Logger Marketplace:ERROR:Producer 42 couldnt place Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM') on the market - max queue size
+2023-04-21 17:07:27,936:Logger Marketplace:ERROR:Producer 45 couldnt place Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM') on the market - max queue size
+2023-04-21 17:07:27,936:Logger Marketplace:ERROR:Producer 41 couldnt place Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM') on the market - max queue size
+2023-04-21 17:07:27,945:Logger Marketplace:ERROR:Producer 30 couldnt place Tea(name='White Peach', price=5, type='White') on the market - max queue size
+2023-04-21 17:07:27,947:Logger Marketplace:INFO:Producer 18 placed on the market Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM')
+2023-04-21 17:07:27,947:Logger Marketplace:ERROR:Producer 47 couldnt place Tea(name='Pai Mu Tan', price=9, type='White') on the market - max queue size
+2023-04-21 17:07:27,956:Logger Marketplace:ERROR:Producer 34 couldnt place Tea(name='English Breakfast', price=2, type='Black') on the market - max queue size
+2023-04-21 17:07:27,957:Logger Marketplace:INFO:Producer 7 placed on the market Tea(name='Pai Mu Tan', price=9, type='White')
+2023-04-21 17:07:27,957:Logger Marketplace:INFO:Added product Tea(name='Jasmine', price=6, type='Green') to the cart 405
+2023-04-21 17:07:27,957:Logger Marketplace:INFO:Producer 43 placed on the market Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+2023-04-21 17:07:27,958:Logger Marketplace:INFO:Added product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM') to the cart 405
+2023-04-21 17:07:27,960:Logger Marketplace:INFO:Added product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM') to the cart 405
+2023-04-21 17:07:27,960:Logger Marketplace:INFO:Added product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM') to the cart 405
+2023-04-21 17:07:27,961:Logger Marketplace:INFO:Added product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM') to the cart 405
+2023-04-21 17:07:27,961:Logger Marketplace:INFO:Added product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM') to the cart 405
+2023-04-21 17:07:27,962:Logger Marketplace:INFO:Placed order from the cart 405
+2023-04-21 17:07:27,976:Logger Marketplace:ERROR:Producer 35 couldnt place Tea(name='Jasmine', price=6, type='Green') on the market - max queue size
+2023-04-21 17:07:27,985:Logger Marketplace:ERROR:Producer 44 couldnt place Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM') on the market - max queue size
+2023-04-21 17:07:27,985:Logger Marketplace:ERROR:Producer 27 couldnt place Tea(name='Jasmine', price=6, type='Green') on the market - max queue size
+2023-04-21 17:07:27,986:Logger Marketplace:ERROR:Producer 48 couldnt place Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM') on the market - max queue size
+2023-04-21 17:07:27,986:Logger Marketplace:INFO:Producer 40 placed on the market Tea(name='White Peach', price=5, type='White')
+2023-04-21 17:07:27,996:Logger Marketplace:ERROR:Producer 39 couldnt place Tea(name='Pai Mu Tan', price=9, type='White') on the market - max queue size
+2023-04-21 17:07:27,997:Logger Marketplace:ERROR:Producer 17 couldnt place Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM') on the market - max queue size
+2023-04-21 17:07:27,997:Logger Marketplace:ERROR:Producer 33 couldnt place Tea(name='Pai Mu Tan', price=9, type='White') on the market - max queue size
+2023-04-21 17:07:28,006:Logger Marketplace:ERROR:Producer 36 couldnt place Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM') on the market - max queue size
+2023-04-21 17:07:28,007:Logger Marketplace:INFO:Producer 29 placed on the market Coffee(name='Brasil', price=7, acidity=5.09, roast_level='MEDIUM')
+2023-04-21 17:07:28,017:Logger Marketplace:ERROR:Producer 45 couldnt place Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM') on the market - max queue size
+2023-04-21 17:07:28,017:Logger Marketplace:ERROR:Producer 32 couldnt place Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM') on the market - max queue size
+2023-04-21 17:07:28,026:Logger Marketplace:ERROR:Producer 47 couldnt place Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM') on the market - max queue size
+2023-04-21 17:07:28,027:Logger Marketplace:ERROR:Producer 8 couldnt place Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM') on the market - max queue size
+2023-04-21 17:07:28,027:Logger Marketplace:ERROR:Producer 11 couldnt place Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM') on the market - max queue size
+2023-04-21 17:07:28,034:Logger Marketplace:INFO:Producer 25 placed on the market Tea(name='Jasmine', price=6, type='Green')
+2023-04-21 17:07:28,035:Logger Marketplace:ERROR:Producer 6 couldnt place Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM') on the market - max queue size
+2023-04-21 17:07:28,036:Logger Marketplace:INFO:Producer 2 placed on the market Tea(name='English Breakfast', price=2, type='Black')
+2023-04-21 17:07:28,037:Logger Marketplace:INFO:Producer 43 placed on the market Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+2023-04-21 17:07:28,037:Logger Marketplace:ERROR:Producer 37 couldnt place Tea(name='Pai Mu Tan', price=9, type='White') on the market - max queue size
+2023-04-21 17:07:28,066:Logger Marketplace:INFO:Producer 26 placed on the market Tea(name='Pai Mu Tan', price=9, type='White')
+2023-04-21 17:07:28,067:Logger Marketplace:INFO:Producer 3 placed on the market Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+2023-04-21 17:07:28,067:Logger Marketplace:ERROR:Producer 21 couldnt place Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM') on the market - max queue size
+2023-04-21 17:07:28,067:Logger Marketplace:INFO:Producer 10 placed on the market Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM')
+2023-04-21 17:07:28,077:Logger Marketplace:ERROR:Producer 20 couldnt place Coffee(name='Brasil', price=7, acidity=5.09, roast_level='MEDIUM') on the market - max queue size
+2023-04-21 17:07:28,077:Logger Marketplace:INFO:Producer 1 placed on the market Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+2023-04-21 17:07:28,087:Logger Marketplace:INFO:Added product Tea(name='Jasmine', price=6, type='Green') to the cart 576
+2023-04-21 17:07:28,087:Logger Marketplace:INFO:Producer 40 placed on the market Tea(name='Jasmine', price=6, type='Green')
+2023-04-21 17:07:28,088:Logger Marketplace:INFO:Added product Tea(name='Jasmine', price=6, type='Green') to the cart 576
+2023-04-21 17:07:28,089:Logger Marketplace:INFO:Placed order from the cart 576
+2023-04-21 17:07:28,089:Logger Marketplace:INFO:Registered new cart with id 577
+2023-04-21 17:07:28,090:Logger Marketplace:INFO:Added product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM') to the cart 577
+2023-04-21 17:07:28,090:Logger Marketplace:INFO:Added product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM') to the cart 577
+2023-04-21 17:07:28,091:Logger Marketplace:INFO:Added product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM') to the cart 577
+2023-04-21 17:07:28,091:Logger Marketplace:INFO:Placed order from the cart 577

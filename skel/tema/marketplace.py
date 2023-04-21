@@ -16,13 +16,13 @@ class Marketplace:
         self.queue_size_per_producer = queue_size_per_producer
         self.producer_id_count = -1 # will add to it in the future
         self.carts_id_count = -1 # will add to it in the future
-        self.producers = {} # key = producer_id, value = product list for the producer_id
-        self.carts = {} # key: cart_id, value: list of products of the cart
+        self.producers = {} # (producer_id, product list for the producer_id)
+        self.carts = {} # (cart_id, list of products of the cart)
         self.lock = Lock()
-        self.logger = logging.getLogger(__name__)
+        self.logger = logging.getLogger('Logger Marketplace')
         self.logger.setLevel(logging.INFO)
         handler = RotatingFileHandler('marketplace.log', maxBytes=25000, backupCount=3)
-        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+        formatter = logging.Formatter('%(asctime)s:%(name)s:%(levelname)s:%(message)s')
         handler.setFormatter(formatter)
         self.logger.addHandler(handler)
 
@@ -42,7 +42,7 @@ class Marketplace:
         isn't bigger than the queue size.
         """
         if len(self.producers[int(producer_id)]) == self.queue_size_per_producer:
-            self.logger.info('Producer %s couldnt place %s on the market - max queue size', producer_id, product)
+            self.logger.error('Producer %s couldnt place %s on the market - max queue size', producer_id, product)
             return False
         self.producers[int(producer_id)].append(product)
         self.logger.info('Producer %s placed on the market %s', producer_id, product)
@@ -70,7 +70,7 @@ class Marketplace:
                     self.producers[producer].remove(product)
                     self.logger.info('Added product %s to the cart %s', product, cart_id)
                     return True
-            self.logger.info('Couldnt add product %s to the cart %s - didnt find product', product, cart_id)
+            self.logger.error('Couldnt add product %s to the cart %s - didnt find product', product, cart_id)
             return False
 
     def remove_from_cart(self, cart_id, product):
@@ -84,7 +84,7 @@ class Marketplace:
                     self.producers[pair[1]].append(product)
                     self.logger.info('Removed product %s from the cart %s', product, cart_id)
                     return
-            self.logger.info('Couldnt remove item %s from cart %s - didnt find item', product, cart_id)
+            self.logger.error('Couldnt remove item %s from cart %s - didnt find item', product, cart_id)
 
     def place_order(self, cart_id):
         """
